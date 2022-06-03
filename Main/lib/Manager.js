@@ -9,7 +9,11 @@ class Manager extends Employee {
         super(name, id, email);
 
         //takes the officenumber argument and assigns it to objects officenumber
-        this.officerNumber = officeNumber;
+        this.officeNumber = officeNumber;
+    }
+
+    getOfficeNumber() {
+        return this.officeNumber;
     }
 
     //returns role of manager
