@@ -1,10 +1,14 @@
 const Employee = require('../lib/Employee')
+
+//creates new object with the inputed variables using employee class 
 const Testemployee = new Employee('Mike', '3819', 'Mikeemail@yahoo.com');
 
+//sets variables to comp[are the object property values with intended values
 const employeename = 'Mike';
 const employeeid = '3819';
 const employeeemail = 'Mikeemail@yahoo.com'
 
+//compares the values of the object properties with intended values
 test('if constructor values are given to object properties', () => {
     expect(Testemployee.name).toBe(employeename);
     expect(Testemployee.id).toBe(employeeid);
