@@ -1,7 +1,7 @@
 {
   "name": "main",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app utilizes objects and classes along with inquirer, jest, and fs npm in order to allow users to quickly generate a team profile of employees.",
   "main": "index.js",
   "directories": {
     "lib": "lib",

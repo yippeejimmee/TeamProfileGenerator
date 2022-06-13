@@ -28,5 +28,5 @@ class Employee {
     }
 }
 
-//exports the employee class so that it can be used in order files
+//exports the employee class so that it can be used 
 module.exports = Employee;

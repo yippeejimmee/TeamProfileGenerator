@@ -8,7 +8,6 @@ This app utilizes objects and classes along with inquirer, jest, and fs npm in o
 - [Usage](#usage)
 - [Test](#test)
 - [Credits](#credits)
-- [License](#license)
 - [Contribute](#contribute)
 - [Questions](#questions)
 
@@ -18,22 +17,19 @@ The first step is to open up the terminal and initialize itwith "npm init -y". N
 
 ## Usage
 
-Run the program with "node index.js" and then answer the questions in the terminal.
+Run the program with "node index.js" and then answer the questions in the terminal. Please watch this <a href="https://youtu.be/YtvpejsgfmA">walkthrough video</a> if you have any questions.
 
 ## Test
 
 If you would like to run some tests, please input the following command:
-Run tests on the application by typing "npm run test".
+First, ensure that the test script in package.json has the value "jest".
+Then, run tests on the application by typing "npm run test".
 
 ## Credits
 
-I would like to thank Thank you to my friends and family as well as the staff at UCSD bootcamp. for their support during the development of this application.
-
-## License
-
-This project is licensed under None.
+I would like to thank Thank you to my friends and family as well as the staff at UCSD bootcamp for their support during the development of this application.
 
 ## Questions
 
 If you have any questions, please direct them towards my email at jimmyqv.tran@gmail.com.  
- You can find more of my work at github.com/yippeejimmee.
+You can find more of my work at github.com/yippeejimmee.
