@@ -113,7 +113,7 @@ const promptIntern = () => {
         //takes answer from prompt and creates new intern object with relevant information
         .then((answers) => {
             console.log(answers);
-            const inputIntern = new intern(answers.name, answers.id, answers.email, answers.gitHub);
+            const inputIntern = new intern(answers.name, answers.id, answers.email, answers.school);
 
             //pushes the new intern object into the membersList array
             membersList.push(inputIntern)
@@ -136,15 +136,33 @@ const employeeMenu = () => {
 
         //utilizes user selection to determine which function to run next
         .then(selection => {
-            if (selection = "Add an engineer") {
-                promptEngineer();
-            } else if (selection = "Add an intern") {
-                promptIntern();
-            } else {
-                createTeam();
+            console.log(selection);
+            switch (selection.employee) {
+                case "Add an engineer":
+                    promptEngineer();
+                    break;
+                case "Add an intern":
+                    promptIntern();
+                    break;
+                default:
+                    createTeam();
             }
 
         })
+}
+
+const createTeam = () => {
+    console.log(membersList)
+    const htmlFile = generateMarkdown(membersList);
+
+    //using writeFileSync to create new file using the html from generateMarkdown 
+    fs.writeFileSync('index.html', htmlFile, (err) => {
+        if (err) {
+            return console.log(err)
+        } else {
+            console.log("Team has been created");
+        }
+    })
 }
 
 promptManager();
